@@ -2,10 +2,15 @@ import kNN
 import matplotlib
 import matplotlib.pyplot as plt
 from numpy import *
-datingDataMat, datingLabels = kNN.file2matrix('datingTestSet2.txt')
-normMat,ranges,minVals = kNN.autoNorm(datingDataMat)
-print normMat
-print minVals
+
+
+testVec = kNN.img2vector('testDigits/0_13.txt')
+print testVec[0,:]
+
+#datingDataMat, datingLabels = kNN.file2matrix('datingTestSet2.txt')
+#normMat,ranges,minVals = kNN.autoNorm(datingDataMat)
+#print normMat
+#print minVals
 """
 fig = plt.figure()
 ax = fig.add_subplot(111)
