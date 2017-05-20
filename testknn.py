@@ -3,9 +3,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 from numpy import *
 
-
-testVec = kNN.img2vector('testDigits/0_13.txt')
-print testVec[0,:]
+kNN.handwritingClassTest()
 
 #datingDataMat, datingLabels = kNN.file2matrix('datingTestSet2.txt')
 #normMat,ranges,minVals = kNN.autoNorm(datingDataMat)
